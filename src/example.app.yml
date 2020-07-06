@@ -1,0 +1,9 @@
+_id: example
+name: 示例
+description: 收货人示例
+icon_slds: webcart
+is_creator: true
+objects: 
+  - consignee
+mobile_objects: 
+  - consignee

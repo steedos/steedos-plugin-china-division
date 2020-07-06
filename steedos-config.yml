@@ -3,7 +3,7 @@ datasources:
     connection:
       url: ${MONGO_URL}
     objectFiles: 
-      - "./src/default/**"
+      - "./src/example/**"
   division:
     connection:
       driver: sqlite
