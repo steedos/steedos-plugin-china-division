@@ -1,0 +1,13 @@
+_id: china-division
+name: 行政区划
+description: 省份、城市、区县、乡镇（街道）、村（居）委会
+icon_slds: approval
+is_creator: true
+objects: 
+  - province
+  - city
+  - area
+mobile_objects: 
+  - province
+  - city
+  - area
