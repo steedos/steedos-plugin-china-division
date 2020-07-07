@@ -16,7 +16,7 @@
         "china-division": "^2.3.1",
         "dotenv-flow": "^3.1.0",
         "sqlite3": "^5.0.0",
-        "steedos-server": "^1.21.0"
+        "steedos-server": "^1.21.1"
     },
     "devDependencies": {
         "nodemon": "^1.19.1"

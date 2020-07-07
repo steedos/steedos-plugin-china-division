@@ -51,14 +51,14 @@ fields:
     label: 详细地址
     type: textarea
     is_wide: true
-  # tag:
-  #   label: 标签
-  #   type: select
-  #   multiple: true
-  #   options:
-  #     - 家:home:#c5def6
-  #     - 公司:company
-  #     - 学校:school
+  tag:
+    label: 标签
+    type: select
+    multiple: true
+    options:
+      - 家:home:#c5def6
+      - 公司:company
+      - 学校:school
 
 list_views:
   all:
@@ -68,7 +68,7 @@ list_views:
       - provinceCode
       - cityCode
       - areaCode
-      # - tag
+      - tag
 
 permission_set:
   user:
