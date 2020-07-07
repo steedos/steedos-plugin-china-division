@@ -26,9 +26,6 @@ fields:
         if(dependValues && dependValues.provinceCode){
           return "provinceCode eq " + dependValues.provinceCode;
         }
-        else{
-          return "null eq -1"
-        }
       }
   areaCode:
     label: 区县
@@ -42,9 +39,6 @@ fields:
       function (filters, dependValues) {
         if(dependValues && dependValues.provinceCode && dependValues.cityCode){
           return "provinceCode eq " + dependValues.provinceCode + " and cityCode eq " + dependValues.cityCode;
-        }
-        else{
-          return "null eq -1"
         }
       }
   detail:
