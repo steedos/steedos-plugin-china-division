@@ -3,18 +3,13 @@ datasources:
     connection:
       url: ${MONGO_URL}
     objectFiles: 
-      - "./src/example/**"
-  division:
-    connection:
-      driver: sqlite
-      url: ./node_modules/china-division/dist/data.sqlite
-    objectFiles:
-      - "./src/division/**" 
+      - "./steedos-app/**"
 public:
   cfs:
     store: "local"
     local: 
       folder: "./storage"
+  templateSpaceId: 'template'
 email:
   host:
   port: 465
@@ -35,3 +30,4 @@ tenant:
   enable_bind_mobile: false
 plugins:
   - "@steedos/accounts"
+  - "@steedos/metadata-api"
