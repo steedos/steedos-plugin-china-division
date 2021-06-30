@@ -15,3 +15,5 @@
 storage/**
 
 .env.local
+
+/logs
