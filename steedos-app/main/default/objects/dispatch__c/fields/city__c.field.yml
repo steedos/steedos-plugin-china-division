@@ -1,0 +1,30 @@
+name: city__c
+filterable: false
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 市
+multiple: false
+omit: false
+readonly: false
+reference_to: cities__c
+required: false
+searchable: false
+sort_no: 160
+sortable: false
+type: lookup
+reference_to_field: code__c
+depend_on:
+  - province__c
+filtersFunction: !!js/function |
+  function (filters, dependValues) {
+    console.log(dependValues);
+    if(dependValues){
+      if (dependValues.province__c) {
+        return "(province_code__c eq '" + dependValues.province__c + "')";
+      } else {
+        return "(null eq -1)";
+      }
+    }
+  }
