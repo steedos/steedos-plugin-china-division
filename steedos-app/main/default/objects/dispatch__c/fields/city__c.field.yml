@@ -19,7 +19,6 @@ depend_on:
   - province__c
 filtersFunction: !!js/function |
   function (filters, dependValues) {
-    console.log(dependValues);
     if(dependValues){
       if (dependValues.province__c) {
         return "(province_code__c eq '" + dependValues.province__c + "')";

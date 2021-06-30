@@ -20,7 +20,6 @@ depend_on:
   - city__c
 filtersFunction: !!js/function |
   function (filters, dependValues) {
-  console.log(dependValues);
     if(dependValues){
       if(dependValues.province__c){
         if(dependValues.city__c){
