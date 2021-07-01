@@ -1,0 +1,34 @@
+name: area__c
+filterable: false
+depend_on:
+  - province__c
+  - city__c
+filtersFunction: !!js/function |
+  function (filters, dependValues) {
+    if(dependValues){
+      if(dependValues.province__c){
+        if(dependValues.city__c){
+          return "(province__c eq '" + dependValues.province__c + "') and (city__c eq '" + dependValues.city__c + "')";
+        }
+        return "(province__c eq '" + dependValues.province__c + "')";
+      }
+      else{
+        return "(null eq -1)";
+      }
+    }
+  }
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 区
+multiple: false
+omit: false
+readonly: false
+reference_to: division_areas__c
+reference_to_field: code__c
+required: false
+searchable: false
+sort_no: 170
+sortable: false
+type: lookup

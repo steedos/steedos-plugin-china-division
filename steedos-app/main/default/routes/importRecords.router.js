@@ -19,7 +19,7 @@ router.get('/api/data/provinces/init', core.requireAuthentication, async functio
         const userId = userSession.userId;
         // const isSpaceAdmin = userSession.is_space_admin;
 
-        const provinceCollection = await objectql.getObject("provinces__c");
+        const provinceCollection = await objectql.getObject("division_provinces__c");
         
         for(let province of provinces){
             await provinceCollection.insert({
@@ -29,25 +29,25 @@ router.get('/api/data/provinces/init', core.requireAuthentication, async functio
             }, userSession);
         }
         
-        const cityCollection = await objectql.getObject("cities__c");
+        const cityCollection = await objectql.getObject("division_cities__c");
 
         for(let city of cities){
             await cityCollection.insert({
                 name: city.name,
                 code__c: city.code,
-                province_code__c: city.provinceCode,
+                province__c: city.provinceCode,
                 space: spaceId
             }, userSession);
         }
 
-        const areaCollection = await objectql.getObject("areas__c");
+        const areaCollection = await objectql.getObject("division_areas__c");
 
         for(let area of areas){
             await areaCollection.insert({
                 name: area.name,
                 code__c: area.code,
-                city_code__c: area.cityCode,
-                province_code__c: area.provinceCode,
+                city__c: area.cityCode,
+                province__c: area.provinceCode,
                 space: spaceId
             }, userSession);
         }

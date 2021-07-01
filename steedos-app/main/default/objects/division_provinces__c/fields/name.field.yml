@@ -1,7 +1,10 @@
 name: name
+formula_blank_value: zeroes
 index: true
 label: 名称
+precision: 18
 required: true
+scale: 2
 searchable: true
 sort_no: 100
 type: text

@@ -1,7 +1,10 @@
 name: owner
+formula_blank_value: zeroes
 hidden: true
 index: true
 label: 所有者
 omit: true
+precision: 18
+scale: 2
 sort_no: 100
 sortable: true

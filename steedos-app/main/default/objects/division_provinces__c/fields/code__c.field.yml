@@ -1,13 +1,16 @@
 name: code__c
 filterable: false
+formula_blank_value: zeroes
 hidden: false
 index: false
 is_name: false
 is_wide: false
 label: code
 omit: false
+precision: 18
 readonly: false
 required: false
+scale: 2
 searchable: false
 sort_no: 120
 sortable: false

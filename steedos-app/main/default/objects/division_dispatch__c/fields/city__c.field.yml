@@ -1,0 +1,32 @@
+name: city__c
+depend_on:
+  - province__c
+filterable: false
+filtersFunction: !<tag:yaml.org,2002:js/function> |-
+  function(filters,dependValues
+  ) {
+
+    if(dependValues){
+      if (dependValues.province__c) {
+        return "(province__c eq '" + dependValues.province__c + "')";
+      } else {
+        return "(null eq -1)";
+      }
+    }
+
+  }
+hidden: false
+index: false
+is_name: false
+is_wide: false
+label: 市
+multiple: false
+omit: false
+readonly: false
+reference_to: division_cities__c
+reference_to_field: code__c
+required: false
+searchable: false
+sort_no: 160
+sortable: false
+type: lookup

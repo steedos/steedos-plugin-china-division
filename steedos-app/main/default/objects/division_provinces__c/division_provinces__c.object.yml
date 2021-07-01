@@ -1,6 +1,5 @@
-name: cities__c
+name: division_provinces__c
 custom: true
-description: 城市
 enable_api: true
 enable_audit: false
 enable_chatter: false
@@ -16,5 +15,5 @@ enable_tasks: false
 enable_workflow: false
 icon: address
 is_enable: true
-label: 地级
+label: division_provinces
 version: 2
