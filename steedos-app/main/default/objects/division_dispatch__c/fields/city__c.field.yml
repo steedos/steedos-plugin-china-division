@@ -9,8 +9,6 @@ filtersFunction: !<tag:yaml.org,2002:js/function> |-
     if(dependValues){
       if (dependValues.province__c) {
         return "(province__c eq '" + dependValues.province__c + "')";
-      } else {
-        return "(null eq -1)";
       }
     }
 

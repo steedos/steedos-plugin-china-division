@@ -12,9 +12,6 @@ filtersFunction: !!js/function |
         }
         return "(province__c eq '" + dependValues.province__c + "')";
       }
-      else{
-        return "(null eq -1)";
-      }
     }
   }
 hidden: false
